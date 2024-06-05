@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=M+PLUS+1p&display=swap');
+
+$font-pt-sans: "PT Sans", sans-serif;
+$font-m-plus-1p: "M PLUS 1p", sans-serif;
+$font-exo-2: "Exo 2", sans-serif;
+
+$color-blue-100: #110936;
+$color-red-100: #F82179;
+$color-gray-100: #BEBEBE;
+$color-gray-200: #F5F5F5;
+$color-gray-300: #888888;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+span, label {
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input, textarea {
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    outline: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+ul, ol, dl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $font-pt-sans;
+    font-weight: 400;
+}
+
+.container {
+    padding: 0;
+}
+
+.font {
+    &-m-plus-1p {
+        font-family: $font-m-plus-1p;
+    }
+
+    &-exo-2 {
+        font-family: $font-exo-2;
+    }
+}
+
+.fs {
+    &-h1 {
+        font-size: 38px;
+        line-height: 126%;
+    }
+
+    &-h2 {
+        font-size: 36px;
+        line-height: 125%;
+        color: $color-blue-100;
+        font-weight: bold;
+
+    }
+
+    &-h6 {
+        font-size: 24px;
+        line-height: 125%;
+    }
+
+    &-p1 {
+        font-size: 22px;
+    }
+
+    &-p2 {
+        font-size: 20px;
+        line-height: 138.8%;
+    }
+
+    &-p3 {
+        font-size: 18px;
+        line-height: 137.4%;
+    }
+    
+    &-p4 {
+        line-height: 137.4%;
+        font-size: 16px;
+    }
+
+    &-p5 {
+        font-size: 14px;
+    }
+
+    &-p6 {
+        font-size: 12px;
+    }
+}
+
+.btn {
+    &-red {
+        background: $color-red-100;
+        text-align: center;
+        padding: 10px 36px;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+
+    }
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+// Header
+.header {
+    z-index: 3;
+    background: $color-blue-100;
+
+    &__container {
+        height: 98px;
+    }
+
+    &__navs {
+        gap: 50px;
+    }
+
+    &__right {
+        gap: 30px;
+
+        &_text {
+            gap: 10px;
+        }
+    }
+}
+// Header end
+
+// Home
+.home {
+    z-index: 1;
+    margin-top: 98px;
+
+    &__bg {
+        z-index: -1;
+    }
+
+    &__container {
+        padding: 83px 0 154px;
+    }
+
+    p {
+        color: $color-gray-100;
+    }
+
+    .btn-red {
+        padding: 10px 114px;
+        line-height: 138.8%;
+    }
+}
+// Home end
+
+// Cocktail
+.cocktail {
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    ul {
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__card {
+        width: calc(20% - 16px);
+        background: $color-gray-200;
+        border-radius: 30px;
+        padding: 17px 20px 18px;
+
+        .card {
+            &__head {
+                height: 172px;
+                margin-bottom: 14px;
+            }
+
+            &__calculate {
+                font-family: $font-m-plus-1p;
+                border-radius: 10px;
+                height: 38px;
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            &__hover {
+                display: none;
+
+                .fs-p4:nth-child(2) {
+                    color: $color-gray-300;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        p {
+            line-height: 150%;
+        }
+
+        &:hover {
+            p {
+                display: none;
+            }
+
+            .card {
+                &__calculate {
+                    display: none !important;
+                }
+
+                &__hover {
+                    display: block;
+
+                    p {
+                        display: block;
+
+                        &:last-child {
+                            line-height: 120%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-red {
+        padding: 9px 91px 10px;
+    }
+}
+// Cocktail end
