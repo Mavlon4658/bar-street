@@ -6,11 +6,14 @@ $font-pt-sans: "PT Sans", sans-serif;
 $font-m-plus-1p: "M PLUS 1p", sans-serif;
 $font-exo-2: "Exo 2", sans-serif;
 
+$color-dark-100: #070707;
 $color-blue-100: #110936;
 $color-red-100: #F82179;
 $color-gray-100: #BEBEBE;
 $color-gray-200: #F5F5F5;
 $color-gray-300: #888888;
+
+$color-gr-red: linear-gradient(to right, #C70253, #F82179);
 
 * {
     padding: 0;
@@ -111,6 +114,7 @@ body {
 
     &-p1 {
         font-size: 22px;
+        line-height: 125%;
     }
 
     &-p2 {
@@ -146,7 +150,16 @@ body {
         border-radius: 10px;
         cursor: pointer;
         user-select: none;
+    }
 
+    &-dark {
+        background: $color-dark-100;
+        color: #fff;
+        border-radius: 10px;
+        padding: 13px 46px 14px;
+        font-family: $font-m-plus-1p;
+        font-style: 20px;
+        font-weight: 500;
     }
 }
 
@@ -276,3 +289,93 @@ section {
     }
 }
 // Cocktail end
+
+// Galerea
+.galerea {
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__example {
+        gap: 20px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+
+        .small_img {
+            width: 100%;
+            height: 277px;
+        }
+
+        &_left {
+            width: calc(100% / 3 * 2 - 10px);
+            gap: 22px;
+
+            img:not(.small_img) {
+                height: 328px;
+            }
+
+            .left_top {
+                gap: 20px;
+
+
+                img:not(.small_img) {
+                    height: 574px;
+                    width: calc(50% - 10px);
+                }
+
+                &__item {
+                    gap: 18px;
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+
+        &_right {
+            width: calc(100% / 3 - 10px);
+            gap: 20px;
+
+            img:not(.small_img) {
+                height: 627px;
+            }
+        }
+    }
+}
+// Galerea end
+
+// Steps
+.steps {
+    &__container {
+        background: $color-gr-red;
+        border-radius: 30px;
+        padding: 40px 40px 25px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        margin-bottom: 221px;
+    }
+
+    &__bg {
+        z-index: -1;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 830px;
+    }
+}
+// Steps end
+
+// Skills
+.skills {
+    
+}
+// Skills end
