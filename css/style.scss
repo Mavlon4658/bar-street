@@ -374,11 +374,107 @@ section {
 }
 // Steps end
 
-// Skills
-.skills {
+// comment
+.comment {
+    .comment_card {
+        padding: 34px 20px;
+        border-radius: 30px;
+        background: #F5F5F5;
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.12px;   
+            color: #000000;
+        }
     
+        h6 {
+            margin-top: 7px;
+            font-size: 22px;    
+            font-weight: 400;
+            line-height: 31.46px;
+            color: #000000;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.5px;
+            color: #000000;
+        }
+    }
+
+    .share_btn {
+        top: 20px;
+        right: 20px;
+    }
+
+    .comment_top {
+        gap: 18px;
+        margin-bottom: 32px;
+    }
+
+    .comment_btn {
+        min-width: 50px;
+        min-height: 50px;
+    }
+
 }
-// Skills end
+// comment
+
+// contact
+.contact {
+    &_in {
+        padding: 57px;
+        border-radius: 30px;
+        background: $color-blue-100;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        color: $color-gray-200;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 0 auto 46px auto;
+        max-width: 692px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 27.5px;    
+        color: $color-gray-200;
+    }
+
+    form {
+        gap: 20px;
+    }
+
+    input {
+        width: 270px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $color-gray-300;
+        padding: 14px 20px;
+        background: #221A48;
+        border-radius: 10px;
+    }
+
+    button {
+        width: 296px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.12px;
+        color: $color-gray-300;
+        margin-top: 20px;
+    }
+}
+// contact
 
 
 // footer
@@ -432,6 +528,7 @@ section {
 
     &_center {
         gap: 62px;
+        margin-bottom: 35px;
     }
 
     &_contact {
@@ -455,6 +552,51 @@ section {
             line-height: 25px;
             color: $color-gray-200;
         }
+    }
+
+    &_bottom {
+
+        .footer_text {
+            gap: 25px;
+        }
+
+        p,
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color: $color-gray-200;
+            display: inline;
+
+            a {
+                display: inline-flex;
+                border-bottom: 1px solid $color-gray-200;
+            }
+        }
+    }
+
+    &_social {
+        width: 600px;
+        gap: 87px;
+
+        &_media {
+            gap: 21px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background: #150C46;
+            }
+        }
+
+        .footer_bank {
+            gap: 21px;
+        }
+        
     }
 }
 // footer

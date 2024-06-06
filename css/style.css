@@ -288,6 +288,87 @@ section {
   min-width: 830px;
 }
 
+.comment .comment_card {
+  padding: 34px 20px;
+  border-radius: 30px;
+  background: #F5F5F5;
+}
+.comment .comment_card span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.12px;
+  color: #000000;
+}
+.comment .comment_card h6 {
+  margin-top: 7px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 31.46px;
+  color: #000000;
+}
+.comment .comment_card p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.5px;
+  color: #000000;
+}
+.comment .share_btn {
+  top: 20px;
+  right: 20px;
+}
+.comment .comment_top {
+  gap: 18px;
+  margin-bottom: 32px;
+}
+.comment .comment_btn {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.contact_in {
+  padding: 57px;
+  border-radius: 30px;
+  background: #110936;
+}
+.contact h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #F5F5F5;
+  margin-bottom: 10px;
+}
+.contact p {
+  margin: 0 auto 46px auto;
+  max-width: 692px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27.5px;
+  color: #F5F5F5;
+}
+.contact form {
+  gap: 20px;
+}
+.contact input {
+  width: 270px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #888888;
+  padding: 14px 20px;
+  background: #221A48;
+  border-radius: 10px;
+}
+.contact button {
+  width: 296px;
+}
+.contact span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.12px;
+  color: #888888;
+  margin-top: 20px;
+}
+
 .footer {
   background: #110936;
   padding: 45px 0 72px;
@@ -332,6 +413,7 @@ section {
 }
 .footer_center {
   gap: 62px;
+  margin-bottom: 35px;
 }
 .footer_contact {
   width: 550px;
@@ -352,4 +434,39 @@ section {
   font-weight: 400;
   line-height: 25px;
   color: #F5F5F5;
+}
+.footer_bottom .footer_text {
+  gap: 25px;
+}
+.footer_bottom p,
+.footer_bottom span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #F5F5F5;
+  display: inline;
+}
+.footer_bottom p a,
+.footer_bottom span a {
+  display: inline-flex;
+  border-bottom: 1px solid #F5F5F5;
+}
+.footer_social {
+  width: 600px;
+  gap: 87px;
+}
+.footer_social_media {
+  gap: 21px;
+}
+.footer_social_media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #150C46;
+}
+.footer_social .footer_bank {
+  gap: 21px;
 }/*# sourceMappingURL=style.css.map */
