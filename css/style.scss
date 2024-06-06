@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=M+PLUS+1p&display=swap');
 
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
+
 $font-pt-sans: "PT Sans", sans-serif;
 $font-m-plus-1p: "M PLUS 1p", sans-serif;
 $font-exo-2: "Exo 2", sans-serif;
@@ -104,7 +117,11 @@ body {
         line-height: 125%;
         color: $color-blue-100;
         font-weight: bold;
+    }
 
+    &-h3 {
+        font-size: 28px;
+        line-height: 125%;
     }
 
     &-h6 {
@@ -178,6 +195,39 @@ section {
 
     &__navs {
         gap: 50px;
+
+        .navs_dropdown {
+            position: relative;
+
+            &__btn {
+                gap: 9px;
+            }
+
+            ul {
+                position: absolute;
+                margin-top: 10px;
+                background: #fff;
+                width: 100px;
+                padding: 10px 20px;
+                display: none;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: -10px;
+                    width: 100%;
+                    height: 10px;
+                    background: transform;
+                }
+            }
+
+            &:hover {
+                ul {
+                    display: block;
+                }
+            }
+        }
     }
 
     &__right {
@@ -704,3 +754,178 @@ section {
     }
 }
 // footer
+
+// Skills
+.skills {
+    &__container {
+        gap: 20px;
+    }
+
+    li {
+        width: calc(25% - 15px);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &:nth-child(1) {
+            width: calc(50% - 10px);
+
+            p {
+                max-width: 530px;
+            }
+        }
+
+        &:not(:first-child) {
+            min-height: 194px;
+            border-radius: 20px;
+            background: #F5F5F5;
+            padding: 15px 20px 15px 51px;
+        }
+
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+}
+// Skills end
+
+// Help
+.help {
+    &__container {
+        background: $color-blue-100;
+        padding: 16px 46px 16px 58px;
+        border-radius: 30px;
+    }
+
+    .btn-red {
+        padding: 9px 59px 10px;
+    }
+
+    &__text {
+        gap: 39px;
+    }
+
+    &__operator {
+        img {
+            width: 74px;
+            flex-shrink: 0;
+            height: 74px;
+            border-radius: 50%;
+        }
+    }
+}
+// Help end
+
+// Vishes
+.vishes {
+    &__title {
+        max-width: 582px;
+        margin-bottom: 25px;
+    }
+
+    ul {
+        gap: 50px;
+
+        li {
+            width: calc(100% - 25px);
+            gap: 15px;
+        }
+    }
+}
+// Vishes end
+
+// Advantage
+.advantage {
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    ul {
+        gap: 20px;
+
+        li {
+            width: calc(100% / 3 - 40px / 3);
+            background: $color-gray-200;
+            border-radius: 20px;
+            padding: 20px;
+            position: relative;
+            min-height: 200px;
+        }
+
+        .text {
+            &__top {
+                color: #F82179;
+            }
+
+            &__bottom {
+                .fs-p4 {
+                    color: #7B7B7B;
+                }
+            }
+        }
+    }
+}
+// Advantage end
+
+// working
+.working {
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    ul {
+        gap: 20px;
+
+        li {
+            width: 100%;
+            box-shadow: 0 0 20px rgba(170, 170, 170, 0.2);
+            border-radius: 10px;
+            padding: 27px 30px;
+            min-height: 328px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            img {
+                position: absolute;
+                z-index: -1;
+            }
+
+            &:nth-child(1) {
+                img {
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &:nth-child(2) {
+                img {
+                    bottom: 56px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &:nth-child(3) {
+                img {
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(4) {
+                img {
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+// working end

@@ -24,8 +24,27 @@
                     <img src="./images/logo.svg" alt="">
                 </a>
                 <ul class="d-flex align-items-center header__navs">
-                    <li>
-                        <a href="#" class="fs-p4 text-white">Услуги</a>
+                    <li class="navs_dropdown">
+                        <a href="#" class="fs-p4 text-white d-flex align-items-center navs_dropdown__btn">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.27275 0C7.9557 0 6.85374 0.938484 6.60036 2.18182H0.545473C0.324809 2.18182 0.125919 2.31476 0.0414969 2.51862C-0.0429014 2.72248 0.00383292 2.95713 0.159903 3.11309L4.36365 7.3144V10.9091H2.72603C2.42478 10.9091 2.18057 11.1533 2.18057 11.4545C2.18057 11.7558 2.42478 12 2.72603 12H7.09219C7.39344 12 7.63765 11.7558 7.63765 11.4545C7.63765 11.1533 7.39344 10.9091 7.09219 10.9091H5.45457V7.3144L7.7678 5.00255C8.2103 5.29655 8.72937 5.45454 9.27275 5.45454C10.7766 5.45454 12 4.2311 12 2.72728C12 1.22346 10.7766 0 9.27275 0ZM4.90911 6.3172L1.86285 3.27274H7.95535L4.90911 6.3172ZM9.27275 4.36364C9.02424 4.36364 8.78428 4.30845 8.5666 4.2042L9.65834 3.11311C9.81441 2.95711 9.86114 2.7225 9.7767 2.51864C9.6923 2.31478 9.49339 2.18184 9.27272 2.18184H7.73019C7.95535 1.54702 8.56163 1.09095 9.27272 1.09095C10.175 1.09095 10.9091 1.82501 10.9091 2.7273C10.9091 3.6296 10.175 4.36364 9.27275 4.36364Z" fill="white"/>
+                            </svg>
+                            Услуги
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.64312 5.45498L0.147658 1.00487C-0.0491669 0.809599 -0.0491669 0.493234 0.147658 0.297472C0.344483 0.102205 0.664179 0.102205 0.861005 0.297472L4.99977 4.3946L9.13854 0.297966C9.33536 0.102697 9.65506 0.102697 9.85238 0.297966C10.0492 0.493233 10.0492 0.810091 9.85238 1.00536L5.35696 5.45547C5.16217 5.64774 4.83745 5.64774 4.64312 5.45498Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#" class="fs-p5">Услуги 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-p5">Услуги 2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-p5">Услуги 3</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#" class="fs-p4 text-white">Фотоотчеты</a>
@@ -250,7 +269,7 @@
             <!-- Galerea -->
             <section class="galerea">
                 <div class="container">
-                    <h2 class="fs-h2 fw-bold galerea__title">Галерея</h2>
+                    <h2 class="fs-h2 fw-bold text-uppercase galerea__title">Галерея</h2>
                     <div class="d-flex align-items-start  galerea__example">
                         <div class="d-flex flex-column galerea__example_left">
                             <div class="d-flex align-items-start left_top">
@@ -274,7 +293,7 @@
             <!-- Steps -->
             <section class="steps">
                 <div class="container position-relative d-flex flex-column align-items-center steps__container">
-                    <h2 class="fs-h2 text-white text-center steps__title">рассчитать стоимость в 2 шага</h2>
+                    <h2 class="fs-h2 text-white text-center text-uppercase steps__title">рассчитать стоимость в 2 шага</h2>
                     <p class="fs-p1 text-white text-center steps__subtitle">Сделаем бар с любимыми профессиональными <br> коктейлями на вашем мероприятии.</p>
                     <img src="./images/steps-card.png" alt="" class="position-absolute steps__bg">
                     <a href="#" class="btn-dark">Рассчитать стоимость</a>
@@ -284,20 +303,169 @@
 
             <!-- Skills -->
             <section class="skills">
-                <ul class="container skills__container">
+                <ul class="container d-flex flex-wrap align-items-stretch skills__container">
                     <li class="fs-p3">
-                        Мобильный бар от bar-street.ru  - это выездной бар на любом мероприятии. <br>
-                        Мы готовим любые алкогольные и безалкогольные коктейли. Просто оставьте контакты, и наш менеджер свяжется с вами и поможет составить прозрачную смету на напитки.
+                        <p>
+                            Мобильный бар от bar-street.ru  - это выездной бар на любом мероприятии. <br>
+                            Мы готовим любые алкогольные и безалкогольные коктейли. Просто оставьте контакты, и наш менеджер свяжется с вами и поможет составить прозрачную смету на напитки.
+                        </p>
                     </li>
-                    <li class="fs-p3 fw-bold">Мы создаем уникальное коктейльное меню</li>
-                    <li class="fs-p3 fw-bold">Привозим и монтируем барную стойку</li>
-                    <li class="fs-p3 fw-bold">Привозим оборудование и посуду</li>
-                    <li class="fs-p3 fw-bold">Покупаем ингредиенты для коктейлей</li>
-                    <li class="fs-p3 fw-bold">Предоставляем профессиональных барменов</li>
-                    <li class="fs-p3 fw-bold">Готовим вкусные коктейли и радуем гостей!</li>
+                    <li class="fs-p3 fw-bold">
+                        <p>Мы создаем уникальное коктейльное меню</p>
+                        <img src="./images/skills-num-1.png" alt="">
+                    </li>
+                    <li class="fs-p3 fw-bold">
+                        <p>Привозим и монтируем барную стойку</p>
+                        <img src="./images/skills-num-2.png" alt="">
+                    </li>
+                    <li class="fs-p3 fw-bold">
+                        <p>Привозим оборудование и посуду</p>
+                        <img src="./images/skills-num-3.png" alt="">
+                    </li>
+                    <li class="fs-p3 fw-bold">
+                        <p>Покупаем ингредиенты для коктейлей</p>
+                        <img src="./images/skills-num-4.png" alt="">
+                    </li>
+                    <li class="fs-p3 fw-bold">
+                        <p>Предоставляем профессиональных барменов</p>
+                        <img src="./images/skills-num-5.png" alt="">
+                    </li>
+                    <li class="fs-p3 fw-bold">
+                        <p>Готовим вкусные коктейли и радуем гостей!</p>
+                        <img src="./images/skills-num-6.png" alt="">
+                    </li>
                 </ul>
             </section>
             <!-- Skills end -->
+          
+          <!-- Help -->
+            <section class="help">
+                <div class="container d-flex align-items-center justify-content-between help__container">
+                    <div class="d-flex align-items-center help__text">
+                        <div class="d-flex flex-column align-items-center help__operator">
+                            <img src="./images/operator.png" alt="">
+                            <p class="fs-p5 text-white">Светлана</p>
+                        </div>
+                        <h2 class="fs-h3 text-white fw-bold text-uppercase">помогу с выбором, сделаю точный расчет <br> стоимости</h2>
+                    </div>
+                    <a href="#" class="btn-red font-m-plus-1p fw-medium fs-p2">Просто напишите</a>
+                </div>
+            </section>
+            <!-- Help end -->
+
+            <!-- Vishes -->
+            <section class="vishes">
+                <div class="container">
+                    <h2 class="fs-h2 fw-bold text-uppercase vishes__title">скажите ваши пожелания, остальное мы сделаем сами</h2>
+                    <ul class="d-flex align-items-start">
+                        <li class="d-flex flex-column">
+                            <p class="fs-p1 fw-bold text-uppercase">барные стойки для нео бара</p>
+                            <p class="fs-p3">В нашем распоряжении более 14 видов барных стоек.  Для удобства мы подготовили подробный каталог с описанием и характеристиками. Пришлем в формате pdf по Вашему запросу. Вот самые популярные мобильные стойки, на которых отлично будут смотреться светящиеся коктейли.</p>
+                        </li>
+                        <li class="d-flex flex-column">
+                            <p class="fs-p1 fw-bold text-uppercase">как мы готовим меню для нео бара</p>
+                            <p class="fs-p3">В нашей коктейльной карте Вы найдете 12 авторских светящихся коктейлей. После согласования даты и адреса мероприятия подготовим предложение с тремя вариантами меню на выбор.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Vishes end -->
+
+            <!-- Advantage -->
+            <section class="advantage">
+                <div class="container">
+                    <h2 class="fs-h2 fw-bold text-uppercase advantage__title">преимущества</h2>
+                    <ul class="d-flex flex-wrap align-items-stretch">
+                        <li class="d-flex flex-column justify-content-between">
+                            <p class="fs-p2 fw-bold d-flex align-items-start justify-content-between text__top">
+                                <img src="./images/advantage-icon-1.svg" alt="">
+                                <span>Все в одном месте</span>
+                            </p>
+                            <div class="d-flex align-items-start justify-content-between text__bottom">
+                                <p class="fs-p3 fw-bold">Удобство</p>
+                                <p class="fs-p4">Не надо думать про лед, <br> посуду и ингредиенты</p>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column justify-content-between">
+                            <p class="fs-p2 fw-bold d-flex align-items-start justify-content-between text__top">
+                                <img src="./images/advantage-icon-2.svg" alt="">
+                                <span>30 минут</span>
+                            </p>
+                            <div class="d-flex align-items-start justify-content-between text__bottom">
+                                <p class="fs-p3 fw-bold">Скорость</p>
+                                <p class="fs-p4">Нам надо всего 30 минут <br> на подготовку</p>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column justify-content-between">
+                            <p class="fs-p2 fw-bold d-flex align-items-start justify-content-between text__top">
+                                <img src="./images/advantage-icon-3.svg" alt="">
+                                <span>Запоминающееся мероприятие</span>
+                            </p>
+                            <div class="d-flex align-items-start justify-content-between text__bottom">
+                                <p class="fs-p3 fw-bold">Статус</p>
+                                <p class="fs-p4">Настоящий бар это круто!</p>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column justify-content-between">
+                            <p class="fs-p2 fw-bold d-flex align-items-start justify-content-between text__top">
+                                <img src="./images/advantage-icon-4.svg" alt="">
+                                <span>Все по вашему вкусу</span>
+                            </p>
+                            <div class="d-flex align-items-start justify-content-between text__bottom">
+                                <p class="fs-p3 fw-bold">Уникальность</p>
+                                <p class="fs-p4">Можно выбрать цвет <br> формы барменов</p>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column justify-content-between">
+                            <p class="fs-p2 fw-bold d-flex align-items-start justify-content-between text__top">
+                                <img src="./images/advantage-icon-5.svg" alt="">
+                                <span>Прозрачность цены</span>
+                            </p>
+                            <div class="d-flex align-items-start justify-content-between text__bottom">
+                                <p class="fs-p3 fw-bold">Честность</p>
+                                <p class="fs-p4">Формируем четкую смету на <br> выездной бар, где отражена <br> стоимость каждого коктейля</p>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column justify-content-between">
+                            <p class="fs-p2 fw-bold d-flex align-items-start justify-content-between text__top">
+                                <img src="./images/advantage-icon-6.svg" alt="">
+                                <span>Выгода в 2 раза</span>
+                            </p>
+                            <div class="d-flex align-items-start justify-content-between text__bottom">
+                                <p class="fs-p3 fw-bold">Стоимость</p>
+                                <p class="fs-p4">Заказать выездной бар дешевле, <br> чем арендовать ресторан</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Advantage end -->
+
+            <!-- Working -->
+            <section class="working">
+                <div class="container">
+                    <h2 class="fs-h2 fw-bold text-uppercase working__title">Как мы работаем</h2>
+                    <ul class="d-flex align-items-stretch">
+                        <li>
+                            <p class="fs-p4 fw-bold">Свяжитесь с нами </p>
+                            <img src="./images/working-card-1.png" alt="">
+                        </li>
+                        <li>
+                            <p class="fs-p4 fw-bold">Согласуем время, место, <br> количество гостей</p>
+                            <img src="./images/working-card-2.png" alt="">
+                        </li>
+                        <li>
+                            <p class="fs-p4 fw-bold">Доставим и установим <br> оборудование</p>
+                            <img src="./images/working-card-3.png" alt="">
+                        </li>
+                        <li>
+                            <p class="fs-p4 fw-bold">Проконтролируем, <br> чтобы все было хорошо</p>
+                            <img src="./images/working-card-4.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Working end -->
 
             <!-- commet -->
             <section class="partner">
