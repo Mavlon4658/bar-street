@@ -383,11 +383,12 @@ section {
 
 // footer
 .footer {
-    background: $color-dark-100;
+    background: $color-blue-100;
     padding: 45px 0 72px;
 
     &_imgs {
         gap: 36px;
+        margin-bottom: 100px;
     }
 
     &_image {
@@ -415,6 +416,45 @@ section {
         bottom: 20px;
         left: 20px;
         right: 20px;
+    }
+
+    &_link {
+        max-width: 709px;
+        gap: 22px 32px;
+
+        a {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.5px;
+            color: $color-red-100;
+        }
+    }
+
+    &_center {
+        gap: 62px;
+    }
+
+    &_contact {
+        width: 550px;
+        gap: 22px 217px;
+        span {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.5px;
+            color: $color-gray-300;
+        }
+
+        &_block {
+            gap: 7px;
+        }
+        
+        a,
+        address {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            color: $color-gray-200;
+        }
     }
 }
 // footer
