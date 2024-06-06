@@ -288,6 +288,86 @@ section {
   min-width: 830px;
 }
 
+.partner .partner_title {
+  margin-bottom: 25px;
+}
+.partner .partner_title .fs-h2 {
+  max-width: 513px;
+  text-transform: uppercase;
+}
+.partner .partner_title button {
+  color: #000000;
+  border-radius: 10px;
+  padding: 13px 46px 14px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid #070707;
+}
+.partner .partner_card {
+  border-radius: 30px;
+  overflow: hidden;
+  background: #F5F5F5;
+}
+.partner .partner_card .partner_card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 23px 20px 30px 20px;
+}
+.partner .partner_card .partner_card_text span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.12px;
+  color: #000000;
+}
+.partner .partner_card .partner_card_text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.6px;
+  color: #000000;
+}
+.partner .partner_btn {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.clients .fs-h2 {
+  text-transform: uppercase;
+}
+.clients .clients_title {
+  margin-bottom: 16px;
+}
+.clients .clients_btns {
+  gap: 25px;
+}
+.clients .clients_btns button {
+  width: 50px;
+  height: 50px;
+}
+.clients .clients_logos {
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+}
+.clients .clients_logos img {
+  filter: grayscale(100%);
+}
+
+.comment .comment_title {
+  margin-bottom: 25px;
+}
+.comment .comment_title .fs-h2 {
+  text-transform: uppercase;
+}
+.comment .comment_title p {
+  max-width: 491px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
 .comment .comment_card {
   padding: 34px 20px;
   border-radius: 30px;
@@ -448,8 +528,8 @@ section {
 }
 .footer_bottom p a,
 .footer_bottom span a {
-  display: inline-flex;
-  border-bottom: 1px solid #F5F5F5;
+  display: inline;
+  text-decoration: underline;
 }
 .footer_social {
   width: 600px;

@@ -374,8 +374,112 @@ section {
 }
 // Steps end
 
+// partner
+.partner {
+    .partner_title {
+        margin-bottom: 25px;
+
+        .fs-h2 {
+            max-width: 513px;
+            text-transform: uppercase;
+        }
+
+        button{
+            color: #000000;
+            border-radius: 10px;
+            padding: 13px 46px 14px;
+            font-family: $font-m-plus-1p;
+            font-size: 20px;
+            font-weight: 500;
+            border: 1px solid $color-dark-100;
+        }
+    }
+
+    .partner_card {
+        border-radius: 30px;
+        overflow: hidden;
+        background: #F5F5F5;
+
+        .partner_card_text {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            padding: 23px 20px 30px 20px;
+
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18.12px;
+                color: #000000;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 28.6px;
+                color: #000000;
+            }
+        }
+    }
+
+    .partner_btn {
+        min-width: 50px;
+        min-height: 50px;
+    }
+}
+// partner
+
+// clients
+.clients {
+    .fs-h2 {
+        text-transform: uppercase;
+    }
+
+    .clients_title {
+        margin-bottom: 16px;
+    }
+
+    .clients_btns {
+        gap: 25px;
+
+        button {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .clients_logos {
+        justify-content: start;
+        align-items: center;
+        gap: 40px;
+
+        img {
+            filter: grayscale(100%);
+        }
+    }
+}
+// clients
+
 // comment
 .comment {
+
+    .comment_title {
+        margin-bottom: 25px;
+
+        .fs-h2 {
+            text-transform: uppercase;
+        }
+
+        p {
+            max-width: 491px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #000000;
+        }
+    }
+
     .comment_card {
         padding: 34px 20px;
         border-radius: 30px;
@@ -569,8 +673,8 @@ section {
             display: inline;
 
             a {
-                display: inline-flex;
-                border-bottom: 1px solid $color-gray-200;
+                display: inline;
+                text-decoration: underline;
             }
         }
     }
