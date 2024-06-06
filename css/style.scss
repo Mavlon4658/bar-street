@@ -424,6 +424,337 @@ section {
 }
 // Steps end
 
+// partner
+.partner {
+    .partner_title {
+        margin-bottom: 25px;
+
+        .fs-h2 {
+            max-width: 513px;
+            text-transform: uppercase;
+        }
+
+        button{
+            color: #000000;
+            border-radius: 10px;
+            padding: 13px 46px 14px;
+            font-family: $font-m-plus-1p;
+            font-size: 20px;
+            font-weight: 500;
+            border: 1px solid $color-dark-100;
+        }
+    }
+
+    .partner_card {
+        border-radius: 30px;
+        overflow: hidden;
+        background: #F5F5F5;
+
+        .partner_card_text {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            padding: 23px 20px 30px 20px;
+
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18.12px;
+                color: #000000;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 28.6px;
+                color: #000000;
+            }
+        }
+    }
+
+    .partner_btn {
+        min-width: 50px;
+        min-height: 50px;
+    }
+}
+// partner
+
+// clients
+.clients {
+    .fs-h2 {
+        text-transform: uppercase;
+    }
+
+    .clients_title {
+        margin-bottom: 16px;
+    }
+
+    .clients_btns {
+        gap: 25px;
+
+        button {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .clients_logos {
+        justify-content: start;
+        align-items: center;
+        gap: 40px;
+
+        img {
+            filter: grayscale(100%);
+        }
+    }
+}
+// clients
+
+// comment
+.comment {
+
+    .comment_title {
+        margin-bottom: 25px;
+
+        .fs-h2 {
+            text-transform: uppercase;
+        }
+
+        p {
+            max-width: 491px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: #000000;
+        }
+    }
+
+    .comment_card {
+        padding: 34px 20px;
+        border-radius: 30px;
+        background: #F5F5F5;
+
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.12px;   
+            color: #000000;
+        }
+    
+        h6 {
+            margin-top: 7px;
+            font-size: 22px;    
+            font-weight: 400;
+            line-height: 31.46px;
+            color: #000000;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.5px;
+            color: #000000;
+        }
+    }
+
+    .share_btn {
+        top: 20px;
+        right: 20px;
+    }
+
+    .comment_top {
+        gap: 18px;
+        margin-bottom: 32px;
+    }
+
+    .comment_btn {
+        min-width: 50px;
+        min-height: 50px;
+    }
+
+}
+// comment
+
+// contact
+.contact {
+    &_in {
+        padding: 57px;
+        border-radius: 30px;
+        background: $color-blue-100;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        color: $color-gray-200;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 0 auto 46px auto;
+        max-width: 692px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 27.5px;    
+        color: $color-gray-200;
+    }
+
+    form {
+        gap: 20px;
+    }
+
+    input {
+        width: 270px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $color-gray-300;
+        padding: 14px 20px;
+        background: #221A48;
+        border-radius: 10px;
+    }
+
+    button {
+        width: 296px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.12px;
+        color: $color-gray-300;
+        margin-top: 20px;
+    }
+}
+// contact
+
+
+// footer
+.footer {
+    background: $color-blue-100;
+    padding: 45px 0 72px;
+
+    &_imgs {
+        gap: 36px;
+        margin-bottom: 100px;
+    }
+
+    &_image {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+
+    .footer_img_bg {
+        background: linear-gradient(180.00deg, rgba(17, 9, 54, 0),rgb(17, 9, 54) 100%);
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    h6 {
+        z-index: 3;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #FFFBFB;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+    }
+
+    &_link {
+        max-width: 709px;
+        gap: 22px 32px;
+
+        a {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.5px;
+            color: $color-red-100;
+        }
+    }
+
+    &_center {
+        gap: 62px;
+        margin-bottom: 35px;
+    }
+
+    &_contact {
+        width: 550px;
+        gap: 22px 217px;
+        span {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22.5px;
+            color: $color-gray-300;
+        }
+
+        &_block {
+            gap: 7px;
+        }
+        
+        a,
+        address {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            color: $color-gray-200;
+        }
+    }
+
+    &_bottom {
+
+        .footer_text {
+            gap: 25px;
+        }
+
+        p,
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color: $color-gray-200;
+            display: inline;
+
+            a {
+                display: inline;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &_social {
+        width: 600px;
+        gap: 87px;
+
+        &_media {
+            gap: 21px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background: #150C46;
+            }
+        }
+
+        .footer_bank {
+            gap: 21px;
+        }
+        
+    }
+}
+// footer
+
 // Skills
 .skills {
     &__container {
