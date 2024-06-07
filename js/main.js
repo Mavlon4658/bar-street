@@ -1,11 +1,16 @@
 // comment slider
 let swiper = new Swiper(".commentSwiper", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
     navigation: {
       nextEl: ".comment-button-next",
       prevEl: ".comment-button-prev",
+    },
+    breakpoints: {
+      993: {
+        slidesPerView: 2,
+      },
     },
 });
 // comment slider
@@ -16,13 +21,13 @@ let swiper2 = new Swiper(".partnerSwiper", {
     spaceBetween: 20,
     loop: true,
     navigation: {
-      nextEl: ".comment-button-next",
-      prevEl: ".comment-button-prev",
+      nextEl: ".partner-button-next",
+      prevEl: ".partner-button-prev",
     },
 });
 // partner slider
 
-// partner slider
+// clients slider
 let swiper3 = new Swiper(".clientsSwiper", {
     slidesPerView: 7,
     spaceBetween: 30,
@@ -32,8 +37,25 @@ let swiper3 = new Swiper(".clientsSwiper", {
       prevEl: ".clients-button-prev",
     },
 });
-// partner slider
+// clients slider
 
+// accardion
+const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+// accardion
 
 // Range slider
 let rangeInp = document.querySelectorAll('.range_inp');
