@@ -376,9 +376,9 @@ section {
   height: 50px;
 }
 .clients .clients_logos {
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  height: 352px;
 }
 .clients .clients_logos img {
   filter: grayscale(100%);
@@ -699,4 +699,70 @@ section {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.faq .fs-h2 {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.faq .accordion {
+  gap: 20px;
+}
+.faq .accordion button {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 13px 20px;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.faq .accordion .accordion_item {
+  border-radius: 20px;
+  background: #F5F5F5;
+}
+.faq .accordion button .accordion-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.faq .accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.faq .accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.faq .accordion .accordion-content {
+  border-radius: 20px;
+  background: #E8E8E8;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.faq .accordion .accordion-content p {
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.faq .accordion .accordion-content .text_start {
+  padding-top: 15px;
+}
+.faq .accordion .accordion-content .text_end {
+  padding-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */

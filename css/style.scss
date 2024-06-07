@@ -499,9 +499,9 @@ section {
     }
 
     .clients_logos {
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
-        gap: 40px;
+        height: 352px;
 
         img {
             filter: grayscale(100%);
@@ -929,3 +929,83 @@ section {
     }
 }
 // working end
+
+// accardion
+.faq {
+    .fs-h2 {
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    .accordion {
+        gap: 20px;
+
+        button {
+            position: relative;
+            text-align: left;
+            width: 100%;
+            padding: 13px 20px;
+            color: #7288a2;
+            font-size: 1.15rem;
+            font-weight: 400;
+            border: none;
+            background: none;
+            outline: none;
+        }
+    
+        .accordion_item{
+            border-radius: 20px;
+            background: #F5F5F5;
+        }
+    
+        button .accordion-title {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 0.01em; 
+            color: #000000;
+        }
+    
+        button[aria-expanded='true'] .icon::after {
+            width: 0;
+        }
+
+        button[aria-expanded='true'] + .accordion-content {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+
+        .accordion-content {
+            border-radius: 20px;
+            background: #E8E8E8;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 200ms linear, max-height 200ms linear;
+            will-change: opacity, max-height;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            p {
+                padding: 0 20px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.01em;
+                color: #000000; 
+            }
+
+            .text_start {
+                padding-top: 15px;
+            }
+
+            .text_end {
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+// accardion
