@@ -25,6 +25,8 @@ $color-red-100: #F82179;
 $color-gray-100: #BEBEBE;
 $color-gray-200: #F5F5F5;
 $color-gray-300: #888888;
+$color-gray-400: #989898;
+$color-gray-500: #757575;
 
 $color-gr-red: linear-gradient(to right, #C70253, #F82179);
 
@@ -178,11 +180,305 @@ body {
         font-style: 20px;
         font-weight: 500;
     }
+
+    &-gray {
+        background: $color-gray-400;
+        border-radius: 10px;
+        padding: 10px 68px;
+        color: white;
+    }
 }
 
 section {
     margin-bottom: 60px;
 }
+
+.inp {
+    &-gray {
+        width: 100%;
+        background: $color-gray-200;
+        font-size: 20px;
+        line-height: 125%;
+        padding: 13px 20px;
+        border-radius: 10px;
+        color: $color-blue-100;
+        
+        &::placeholder {
+            color: $color-gray-500;
+        }
+    }
+}
+
+.range_inp {
+    label {
+        margin-bottom: 41px;
+    }
+
+    &__slide {
+        width: 100%;
+        height: 8px;
+        background: $color-gray-200;
+        margin-bottom: 2px;
+        border-radius: 50px;
+        position: relative;
+
+        &_line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+            width: 30%;
+            background: $color-red-100;
+            border-radius: 50px;
+        }
+
+        span {
+            font-size: 20px;
+            line-height: 125%;
+            position: absolute;
+            top: -5px;
+            left: 30%;
+            transform: translate(-50%, -100%);
+            background: $color-gray-200;
+            padding: 1px 15px;
+            border-radius: 50px;
+        }
+
+        input {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            height: 8px;
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+// Main modal
+.main_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+
+    &.active {
+        display: flex;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    &__content {
+        position: relative;
+
+        .swiper {
+            width: 1020px;
+        }
+
+        &_in {
+            background: #fff;
+            width: 1020px;
+            min-height: 727px;
+            border-radius: 30px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &_foot {
+            button {
+                width: 196px;
+                height: 47px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__subtitle {
+        color: $color-blue-100;
+        margin-bottom: 30px;
+    }
+}
+// Main modal end
+
+// Quiz modal
+.modal_quiz {
+    &__content {
+        color: $color-blue-100;
+
+        h3 {
+            color: $color-red-100;
+            margin-bottom: 30px;
+        }
+
+        .range_inp {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__select {
+        gap: 20px;
+
+        li {
+            width: calc(25% - 15px);
+            box-shadow: 0 4px 20px rgba(170, 170, 170, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            min-height: 205px;
+            position: relative;
+            padding-top: 33px;
+            user-select: none;
+            cursor: pointer;
+            border: 2px solid transparent;
+
+            img {
+                width: 100%;
+                height: 119px;
+                object-fit: contain;
+            }
+
+            &:nth-child(1) {
+                img {
+                    height: 105px;
+                }
+            }
+
+            p {
+                position: absolute;
+                bottom: 18px;
+                left: 18px;
+                width: calc(100% - 36px);
+            }
+
+            &.active {
+                border-color: $color-red-100;
+            }
+        }
+    }
+
+    &__prices {
+        gap: 20px;
+
+        li {
+            width: calc(100% / 3 - 40px / 3);
+            background: $color-gray-200;
+            padding: 12px 38px 27px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            user-select: none;
+
+            img {
+                &.active {
+                    display: none;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .price {
+                display: none;
+                margin-top: 10px;
+            }
+
+            &.active {
+                background: $color-red-100;
+                color: white;
+
+                img {
+                    display: none;
+
+                    &.active {
+                        display: inline;
+                    }
+                }
+
+                .price {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__foot {
+        .price_wrap {
+            background: $color-gray-200;
+            border-radius: 10px;
+            padding: 14px 20px 12px;
+        }
+
+        ul {
+            gap: 3px;
+        }
+
+        h4 {
+            color: $color-red-100;
+        }
+
+        p {
+            margin: 10px 0 20px;
+        }
+    }
+
+    &__form {
+        gap: 20px;
+        padding-top: 20px;
+        margin-bottom: 18px;
+
+        label {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__checkbox {
+        gap: 10px;
+        user-select: none;
+        cursor: pointer;
+        
+        input {
+            display: none;
+        }
+
+        .icon {
+            width: 19px;
+            height: 19px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border: 1px solid $color-red-100;
+            border-radius: 2px;
+
+            img {
+                display: none;
+            }
+        }
+
+        input:checked + .icon img {
+            display: block;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+// Quiz modal end
 
 // Header
 .header {
@@ -240,6 +536,39 @@ section {
 }
 // Header end
 
+// Menu
+.menu {
+    position: fixed;
+    z-index: 2;
+    background: white;
+    left: 0;
+    top: 98px;
+    width: 100%;
+    padding: 9px 0;
+    transition: .3s ease all;
+    transform: translateY(-110%);
+
+    &.active {
+        transform: translateY(0);
+    }
+
+    .swiper {
+        overflow: visible;
+        
+        &-slide {
+            width: auto;
+
+            a {
+                padding: 10px 20px 9px;
+                background: $color-gray-200;
+                color: $color-blue-100;
+                border-radius: 50px;
+            }
+        }
+    }
+}
+// Menu end
+
 // Home
 .home {
     z-index: 1;
@@ -280,6 +609,11 @@ section {
         background: $color-gray-200;
         border-radius: 30px;
         padding: 17px 20px 18px;
+        display: none;
+        
+        &.active {
+            display: block;
+        }
 
         .card {
             &__head {
