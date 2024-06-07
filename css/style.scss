@@ -282,9 +282,15 @@ section {
 
     &__content {
         position: relative;
+        z-index: 2;
 
         .swiper {
             width: 1020px;
+
+            &-slide:not(.swiper-slide-active) {
+                height: 0;
+                overflow: hidden;
+            }
         }
 
         &_in {

@@ -83,7 +83,7 @@ if (rangeInp.length) {
 let quizSlider = new Swiper('.modal_quiz .swiper', {
     slidesPerView: 1,
     // initialSlide: 3,
-    allowTouchMove: false,
+    // allowTouchMove: false,
     effect: 'fade',
 })
 

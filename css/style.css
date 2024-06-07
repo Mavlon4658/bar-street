@@ -227,9 +227,14 @@ section {
 }
 .main_modal__content {
   position: relative;
+  z-index: 2;
 }
 .main_modal__content .swiper {
   width: 1020px;
+}
+.main_modal__content .swiper-slide:not(.swiper-slide-active) {
+  height: 0;
+  overflow: hidden;
 }
 .main_modal__content_in {
   background: #fff;
