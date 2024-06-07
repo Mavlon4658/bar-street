@@ -516,6 +516,11 @@ section {
     .comment_title {
         margin-bottom: 25px;
 
+        @include media(1250) {
+            flex-direction: column;
+            gap: 11px;
+        }
+
         .fs-h2 {
             text-transform: uppercase;
         }
@@ -527,7 +532,37 @@ section {
             line-height: 24px;
             letter-spacing: 0.01em;
             color: #000000;
+
+            @include media(1250) {
+                max-width: 871px;
+            }
         }
+    }
+
+    .desktop_btn {
+        @include media(1250) {
+            display: none;
+        }
+    }
+
+    .comment_slider {
+        @include media(1250) {
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+
+    .comment_media_btns {
+        display: none;
+        gap: 25px;
+
+        @include media(1250) {
+            display: flex;
+        }
+    }
+
+    .commentSwiper {
+        width: 100%;
     }
 
     .comment_card {
@@ -582,6 +617,10 @@ section {
         padding: 57px;
         border-radius: 30px;
         background: $color-blue-100;
+
+        @include media(769) {
+            padding: 45px;
+        }
     }
 
     h3 {
@@ -603,6 +642,11 @@ section {
 
     form {
         gap: 20px;
+
+        @include media(769) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     input {
@@ -614,10 +658,18 @@ section {
         padding: 14px 20px;
         background: #221A48;
         border-radius: 10px;
+
+        @include media(769) {
+            width: 400px;
+        }
     }
 
     button {
         width: 296px;
+
+        @include media(769) {
+            width: 400px;
+        }
     }
 
     span {
@@ -629,7 +681,6 @@ section {
     }
 }
 // contact
-
 
 // footer
 .footer {
